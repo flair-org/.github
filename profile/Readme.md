@@ -6,8 +6,8 @@ It enables researchers and organizations to track, preserve, and collaboratively
 
 Think of it as Git styled version control for model evolution: contributors train in their own environments, publish updates as commits, and reconstruct, branch, merge, compare, and revert model states deterministically.
 
-![Flair Hub](resources/assets/demo/sc1.png)
-![Flair CLI Docs](resources/assets/demo/sc2.png)
+![Flair Hub](../resources/assets/demo/sc1.png)
+![Flair CLI Docs](../resources/assets/demo/sc2.png)
 
 ## Table Of Contents
 
