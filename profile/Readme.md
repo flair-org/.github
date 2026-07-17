@@ -16,11 +16,8 @@ Think of it as Git styled version control for model evolution: contributors trai
 - [High-Level Architecture](#high-level-architecture)
 - [Quick Start](#quick-start)
 - [CLI Workflow At A Glance](#cli-workflow-at-a-glance)
-- [Configuration](#configuration)
-- [Privacy And Security Model](#privacy-and-security-model)
 - [Current Status](#current-status)
 - [Contributing](#contributing)
-- [Related Docs](#related-docs)
 - [Disclaimer](#disclaimer)
 
 ## What Flair Solves
@@ -79,32 +76,10 @@ The objective is to preserve model evolution, contribution history, and reproduc
 ### 1. Prerequisites
 
 - Python 3.10+
-- Node.js 18+
-- pnpm
-- MongoDB instance (for backend)
-
-### 2. Start Backend
-
-```bash
-cd repository_manager/backend
-pnpm install
-pnpm run build
-pnpm run dev
-```
-
-### 3. Start Auth Frontend
-
-```bash
-cd repository_manager/auth_frontend
-cp .env.example .env
-pnpm install
-pnpm run dev
-```
 
 ### 4. Install And Use Flair CLI
 
 From the workspace root:
-
 ```bash
 pip install -e ./flair_cli
 flair --help
@@ -138,17 +113,6 @@ Useful commands:
 
 Full command reference: see `flair_cli/README.md`.
 
-## Configuration
-
-CLI defaults are local-development friendly and can be updated via config commands or `~/.flair/config.yaml`.
-
-Default values in CLI config include:
-
-- `api_base_url: http://localhost:2112`
-- `auth_url: http://localhost:5173`
-
-If your backend/frontend run on different ports, update CLI config accordingly.
-
 ## Data And Trust Model
 
 - Raw datasets are not uploaded through Flair workflows.
@@ -177,7 +141,6 @@ Contributions are welcome.
 Areas where help is especially valuable:
 
 - CLI ergonomics and reliability
-- backend API hardening and observability
 - proof and verification pipeline robustness
 - docs and onboarding clarity
 
@@ -187,12 +150,6 @@ Contribution expectations:
 - include tests where practical
 - keep changes focused and well documented
 
-## Related Docs
-
-- `docs/overview.md`
-- `docs/routes_todo.md`
-- `flair_cli/README.md`
-- `repository_manager/Readme.md`
 
 ## Disclaimer
 
